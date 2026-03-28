@@ -44,7 +44,7 @@
   <h2>3. 外部サービスへのデータ送信</h2>
   <p>本アプリでは、AIコメント生成のためにユーザーの投稿内容を以下の外部サービスに送信します。</p>
   <ul>
-    <li><strong>Anthropic, PBC（Claude API）</strong>: 投稿内容をAIモデルに送信し、フォロワーキャラクターのコメントを生成します。Anthropicの<a href="https://www.anthropic.com/policies/privacy" target="_blank">プライバシーポリシー</a>に基づき、API経由で送信されたデータはAIモデルの学習には使用されません。</li>
+    <li><strong>Google（Gemini API）</strong>: 投稿内容をAIモデルに送信し、フォロワーキャラクターのコメントを生成します。Googleの<a href="https://ai.google.dev/gemini-api/terms" target="_blank">Gemini API利用規約</a>に基づき、有料APIプランで送信されたデータはAIモデルの学習には使用されません。</li>
     <li><strong>Supabase（データベース・認証）</strong>: ユーザーデータはSupabase（AWS上）に保存されます。<a href="https://supabase.com/privacy" target="_blank">Supabaseプライバシーポリシー</a></li>
   </ul>
 
@@ -52,7 +52,7 @@
   <ul>
     <li>投稿データ・アカウント情報はSupabase上のデータベースに暗号化して保存されます。</li>
     <li>認証トークンはデバイスのSecure Storageに保存され、第三者がアクセスすることはできません。</li>
-    <li>AIコメント生成のために送信されたデータは、Anthropic側で一時的に処理された後、保持されません。</li>
+    <li>AIコメント生成のために送信されたデータは、Google側で一時的に処理された後、保持されません。</li>
   </ul>
 
   <h2>5. データの第三者提供</h2>
